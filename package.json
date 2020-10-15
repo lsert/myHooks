@@ -1,0 +1,22 @@
+{
+  "name": "myhooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -d --outDir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.zhonganinfo.com/lvjiawen/myhooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.52"
+  },
+  "dependencies": {
+    "react": "^16.14.0"
+  }
+}
