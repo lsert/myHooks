@@ -1,11 +1,11 @@
 {
   "name": "myhooks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -d --outDir dist"
+    "build": "rm -r dist && tsc -d --outDir dist"
   },
   "repository": {
     "type": "git",
