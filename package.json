@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://git.zhonganinfo.com/lvjiawen/myhooks.git"
   },
-  "author": "",
+  "author": "lsert",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^16.9.52"
