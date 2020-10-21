@@ -12,11 +12,12 @@ export function useEventCallback<T extends ((...args: any[]) => any)>(fn: T) {
 
 export function useConverseHandler(initState = false) {
   const [state, setState] = useState(initState);
-  const toggle = useEventCallback((newState?: boolean) => {
-    setState((s) => newState === undefined ? !s : newState);
+  const toggle = useEventCallback(() => {
+    setState((s) => !s);
   });
   return {
     state,
     toggle,
+    setState,
   }
 }
