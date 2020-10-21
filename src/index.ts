@@ -5,9 +5,10 @@ export function useEventCallback<T extends ((...args: any[]) => any)>(fn: T) {
   useLayoutEffect(() => {
     ref.current = fn;
   }, [fn]);
-  return useCallback((...args) => {
+  const callback = useCallback((...args) => {
     return ref.current(...args);
   }, []);
+  return callback as T;
 }
 
 export function useConverseHandler(initState = false) {
